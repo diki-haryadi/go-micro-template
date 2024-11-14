@@ -1,8 +1,6 @@
-# Go Microservice Template
+# Go Micro Template
 
-<!-- # Hands-On Microservices with Node.js -->
-
-This is the code repository for [Go Microservice Template](https://www.github.com/infranyx/go-microservice-template), published by InfraNyx.
+This repository contains the source code for the Go Micro Template project.
 
 **Build, test, and deploy robust golang microservices**
 
@@ -31,7 +29,7 @@ template. Calling for exceptions must be brought up in the engineering team.
 
 ## Status
 
-The template project is in alpha status.
+The template project is in beta status.
 
 ## Reference
 
@@ -45,15 +43,15 @@ The template project is in alpha status.
 
 ### Prerequisites
 
-- [Go 1.13+](https://golang.org/doc/install)
+- [Go 1.23+](https://golang.org/doc/install)
 
 ### Setup
 
 1. Clone the repository and navigate to the root directory of the project:
 
 ```bash
-git clone https://github.com/infranyx/go-microservice-template.git
-cd go-microservice-template
+git clone https://github.com/diki-haryadi/go-micro-template.git
+cd go-micro-template
 ```
 
 2. Install the dependencies:
