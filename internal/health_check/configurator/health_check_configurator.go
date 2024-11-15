@@ -13,7 +13,7 @@ import (
 	healthCheckHttp "github.com/diki-haryadi/go-micro-template/internal/health_check/delivery/http"
 	healthCheckDomain "github.com/diki-haryadi/go-micro-template/internal/health_check/domain"
 	healthCheckUseCase "github.com/diki-haryadi/go-micro-template/internal/health_check/usecase"
-	infraContainer "github.com/diki-haryadi/go-micro-template/pkg/infra_container"
+	infraContainer "github.com/diki-haryadi/ztools/infra_container"
 )
 
 type configurator struct {

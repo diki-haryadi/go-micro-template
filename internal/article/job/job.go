@@ -8,12 +8,12 @@ import (
 	"github.com/robfig/cron/v3"
 
 	articleDomain "github.com/diki-haryadi/go-micro-template/internal/article/domain"
-	"github.com/diki-haryadi/go-micro-template/pkg/wrapper"
-	wrapperErrorhandler "github.com/diki-haryadi/go-micro-template/pkg/wrapper/handlers/error_handler"
-	wrapperRecoveryHandler "github.com/diki-haryadi/go-micro-template/pkg/wrapper/handlers/recovery_handler"
-	wrapperSentryHandler "github.com/diki-haryadi/go-micro-template/pkg/wrapper/handlers/sentry_handler"
+	"github.com/diki-haryadi/ztools/wrapper"
+	wrapperErrorhandler "github.com/diki-haryadi/ztools/wrapper/handlers/error_handler"
+	wrapperRecoveryHandler "github.com/diki-haryadi/ztools/wrapper/handlers/recovery_handler"
+	wrapperSentryHandler "github.com/diki-haryadi/ztools/wrapper/handlers/sentry_handler"
 
-	cronJob "github.com/diki-haryadi/go-micro-template/pkg/cron"
+	cronJob "github.com/diki-haryadi/ztools/cron"
 )
 
 type job struct {

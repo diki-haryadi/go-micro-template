@@ -1,9 +1,9 @@
 package articleException
 
 import (
-	errorList "github.com/diki-haryadi/go-micro-template/pkg/constant/error/error_list"
-	customErrors "github.com/diki-haryadi/go-micro-template/pkg/error/custom_error"
-	errorUtils "github.com/diki-haryadi/go-micro-template/pkg/error/error_utils"
+	errorList "github.com/diki-haryadi/ztools/constant/error/error_list"
+	customErrors "github.com/diki-haryadi/ztools/error/custom_error"
+	errorUtils "github.com/diki-haryadi/ztools/error/error_utils"
 )
 
 func CreateArticleValidationExc(err error) error {

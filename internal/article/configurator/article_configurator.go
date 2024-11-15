@@ -14,8 +14,8 @@ import (
 	articleJob "github.com/diki-haryadi/go-micro-template/internal/article/job"
 	articleRepository "github.com/diki-haryadi/go-micro-template/internal/article/repository"
 	articleUseCase "github.com/diki-haryadi/go-micro-template/internal/article/usecase"
-	externalBridge "github.com/diki-haryadi/go-micro-template/pkg/external_bridge"
-	infraContainer "github.com/diki-haryadi/go-micro-template/pkg/infra_container"
+	externalBridge "github.com/diki-haryadi/ztools/external_bridge"
+	infraContainer "github.com/diki-haryadi/ztools/infra_container"
 )
 
 type configurator struct {

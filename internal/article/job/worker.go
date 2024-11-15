@@ -3,7 +3,7 @@ package articleJob
 import (
 	"context"
 
-	"github.com/diki-haryadi/go-micro-template/pkg/wrapper"
+	"github.com/diki-haryadi/ztools/wrapper"
 )
 
 func (j *job) logArticleWorker() wrapper.HandlerFunc {

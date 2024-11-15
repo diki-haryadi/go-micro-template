@@ -16,9 +16,9 @@ import (
 	kafkaHealthCheckUseCase "github.com/diki-haryadi/go-micro-template/internal/health_check/usecase/kafka_health_check"
 	postgresHealthCheckUseCase "github.com/diki-haryadi/go-micro-template/internal/health_check/usecase/postgres_health_check"
 	tmpDirHealthCheckUseCase "github.com/diki-haryadi/go-micro-template/internal/health_check/usecase/tmp_dir_health_check"
-	"github.com/diki-haryadi/go-micro-template/pkg/logger"
+	"github.com/diki-haryadi/ztools/logger"
 
-	iContainer "github.com/diki-haryadi/go-micro-template/pkg/infra_container"
+	iContainer "github.com/diki-haryadi/ztools/infra_container"
 )
 
 type IntegrationTestFixture struct {

@@ -6,7 +6,7 @@ import (
 
 	articleDomain "github.com/diki-haryadi/go-micro-template/internal/article/domain"
 	articleDto "github.com/diki-haryadi/go-micro-template/internal/article/dto"
-	"github.com/diki-haryadi/go-micro-template/pkg/postgres"
+	"github.com/diki-haryadi/ztools/postgres"
 )
 
 type repository struct {

@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 
 	articleDto "github.com/diki-haryadi/go-micro-template/internal/article/dto"
-	"github.com/diki-haryadi/go-micro-template/pkg/logger"
-	"github.com/diki-haryadi/go-micro-template/pkg/wrapper"
+	"github.com/diki-haryadi/ztools/logger"
+	"github.com/diki-haryadi/ztools/wrapper"
 )
 
 func (c *consumer) createEventWorker(

@@ -8,8 +8,8 @@ import (
 
 	articleConfigurator "github.com/diki-haryadi/go-micro-template/internal/article/configurator"
 	healthCheckConfigurator "github.com/diki-haryadi/go-micro-template/internal/health_check/configurator"
-	externalBridge "github.com/diki-haryadi/go-micro-template/pkg/external_bridge"
-	iContainer "github.com/diki-haryadi/go-micro-template/pkg/infra_container"
+	externalBridge "github.com/diki-haryadi/ztools/external_bridge"
+	iContainer "github.com/diki-haryadi/ztools/infra_container"
 )
 
 type App struct{}

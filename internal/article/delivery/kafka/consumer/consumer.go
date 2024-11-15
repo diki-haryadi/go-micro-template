@@ -4,12 +4,12 @@ import (
 	"context"
 
 	articleDomain "github.com/diki-haryadi/go-micro-template/internal/article/domain"
-	kafkaConsumer "github.com/diki-haryadi/go-micro-template/pkg/kafka/consumer"
-	"github.com/diki-haryadi/go-micro-template/pkg/logger"
-	"github.com/diki-haryadi/go-micro-template/pkg/wrapper"
-	wrapperErrorhandler "github.com/diki-haryadi/go-micro-template/pkg/wrapper/handlers/error_handler"
-	wrapperRecoveryHandler "github.com/diki-haryadi/go-micro-template/pkg/wrapper/handlers/recovery_handler"
-	wrapperSentryHandler "github.com/diki-haryadi/go-micro-template/pkg/wrapper/handlers/sentry_handler"
+	kafkaConsumer "github.com/diki-haryadi/ztools/kafka/consumer"
+	"github.com/diki-haryadi/ztools/logger"
+	"github.com/diki-haryadi/ztools/wrapper"
+	wrapperErrorhandler "github.com/diki-haryadi/ztools/wrapper/handlers/error_handler"
+	wrapperRecoveryHandler "github.com/diki-haryadi/ztools/wrapper/handlers/recovery_handler"
+	wrapperSentryHandler "github.com/diki-haryadi/ztools/wrapper/handlers/sentry_handler"
 )
 
 type consumer struct {

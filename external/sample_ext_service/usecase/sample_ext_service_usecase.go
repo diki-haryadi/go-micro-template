@@ -6,8 +6,8 @@ import (
 	articleV1 "github.com/diki-haryadi/protobuf-template/go-micro-template/article/v1"
 
 	sampleExtServiceDomain "github.com/diki-haryadi/go-micro-template/external/sample_ext_service/domain"
-	grpcError "github.com/diki-haryadi/go-micro-template/pkg/error/grpc"
-	"github.com/diki-haryadi/go-micro-template/pkg/grpc"
+	grpcError "github.com/diki-haryadi/ztools/error/grpc"
+	"github.com/diki-haryadi/ztools/grpc"
 )
 
 type sampleExtServiceUseCase struct {

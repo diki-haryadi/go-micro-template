@@ -13,8 +13,8 @@ import (
 
 	articleDto "github.com/diki-haryadi/go-micro-template/internal/article/dto"
 	articleFixture "github.com/diki-haryadi/go-micro-template/internal/article/tests/fixtures"
-	grpcError "github.com/diki-haryadi/go-micro-template/pkg/error/grpc"
-	httpError "github.com/diki-haryadi/go-micro-template/pkg/error/http"
+	grpcError "github.com/diki-haryadi/ztools/error/grpc"
+	httpError "github.com/diki-haryadi/ztools/error/http"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"

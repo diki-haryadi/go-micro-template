@@ -4,7 +4,7 @@ import (
 	"github.com/segmentio/kafka-go"
 
 	healthCheckDomain "github.com/diki-haryadi/go-micro-template/internal/health_check/domain"
-	"github.com/diki-haryadi/go-micro-template/pkg/config"
+	"github.com/diki-haryadi/ztools/config"
 )
 
 type useCase struct{}

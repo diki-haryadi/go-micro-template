@@ -6,7 +6,7 @@ import (
 	"github.com/segmentio/kafka-go"
 
 	articleDomain "github.com/diki-haryadi/go-micro-template/internal/article/domain"
-	kafkaProducer "github.com/diki-haryadi/go-micro-template/pkg/kafka/producer"
+	kafkaProducer "github.com/diki-haryadi/ztools/kafka/producer"
 )
 
 type producer struct {

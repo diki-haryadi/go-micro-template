@@ -2,7 +2,7 @@ package postgresHealthCheckUseCase
 
 import (
 	healthCheckDomain "github.com/diki-haryadi/go-micro-template/internal/health_check/domain"
-	"github.com/diki-haryadi/go-micro-template/pkg/postgres"
+	"github.com/diki-haryadi/ztools/postgres"
 )
 
 type useCase struct {

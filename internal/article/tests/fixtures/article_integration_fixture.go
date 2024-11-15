@@ -17,9 +17,9 @@ import (
 	articleKafkaProducer "github.com/diki-haryadi/go-micro-template/internal/article/delivery/kafka/producer"
 	articleRepo "github.com/diki-haryadi/go-micro-template/internal/article/repository"
 	articleUseCase "github.com/diki-haryadi/go-micro-template/internal/article/usecase"
-	externalBridge "github.com/diki-haryadi/go-micro-template/pkg/external_bridge"
-	iContainer "github.com/diki-haryadi/go-micro-template/pkg/infra_container"
-	"github.com/diki-haryadi/go-micro-template/pkg/logger"
+	externalBridge "github.com/diki-haryadi/ztools/external_bridge"
+	iContainer "github.com/diki-haryadi/ztools/infra_container"
+	"github.com/diki-haryadi/ztools/logger"
 )
 
 const BUFSIZE = 1024 * 1024
