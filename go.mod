@@ -4,7 +4,7 @@ go 1.23.3
 
 require (
 	github.com/diki-haryadi/protobuf-template v0.0.0-20241114145947-cffb40e44840
-	github.com/diki-haryadi/ztools v0.0.2
+	github.com/diki-haryadi/ztools v0.0.10
 	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
 	github.com/google/uuid v1.6.0
 	github.com/labstack/echo/v4 v4.12.0

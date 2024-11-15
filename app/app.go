@@ -2,8 +2,14 @@ package app
 
 import (
 	"context"
+	"github.com/diki-haryadi/ztools/config"
+	"github.com/diki-haryadi/ztools/env"
+	"github.com/diki-haryadi/ztools/logger"
+	"log"
 	"os"
 	"os/signal"
+	"path/filepath"
+	"runtime"
 	"syscall"
 
 	articleConfigurator "github.com/diki-haryadi/go-micro-template/internal/article/configurator"
@@ -21,6 +27,25 @@ func New() *App {
 func (a *App) Run() error {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
+
+	_, callerDir, _, ok := runtime.Caller(0)
+	if !ok {
+		log.Fatal("Error generating env dir")
+	}
+
+	// Define the possible paths to the .env file
+	envPaths := []string{
+		filepath.Join(filepath.Dir(callerDir), "..", "envs/.env"),
+	}
+
+	// Load the .env file from the provided paths
+	env.LoadEnv(envPaths...) // Use ... to expand the slice
+	config.NewConfig()
+
+	loggerPath := []string{
+		filepath.Join(filepath.Dir(callerDir), "..", "tmp/logs"),
+	}
+	logger.NewLogger(loggerPath...)
 
 	ic, infraDown, err := iContainer.NewIC(ctx)
 	if err != nil {

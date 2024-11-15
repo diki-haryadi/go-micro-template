@@ -111,6 +111,10 @@ migrate-up: ### migration up
 migrate-force: ### force
 	migrate -path db/migrations -database $(PG_URL) force $(id)
 
+.PHONY: compose-up
+compose-up: ## docker-compose up
+	docker-compose -f deployments/docker-compose.yaml up -d
+
 ## ---------- Help ----------
 .PHONY: help
 help: ## Show this help.

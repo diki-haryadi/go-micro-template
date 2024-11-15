@@ -2,16 +2,13 @@ package articleConfigurator
 
 import (
 	"context"
-
 	articleV1 "github.com/diki-haryadi/protobuf-template/go-micro-template/article/v1"
 
 	sampleExtServiceUseCase "github.com/diki-haryadi/go-micro-template/external/sample_ext_service/usecase"
 	articleGrpcController "github.com/diki-haryadi/go-micro-template/internal/article/delivery/grpc"
 	articleHttpController "github.com/diki-haryadi/go-micro-template/internal/article/delivery/http"
-	articleKafkaConsumer "github.com/diki-haryadi/go-micro-template/internal/article/delivery/kafka/consumer"
 	articleKafkaProducer "github.com/diki-haryadi/go-micro-template/internal/article/delivery/kafka/producer"
 	articleDomain "github.com/diki-haryadi/go-micro-template/internal/article/domain"
-	articleJob "github.com/diki-haryadi/go-micro-template/internal/article/job"
 	articleRepository "github.com/diki-haryadi/go-micro-template/internal/article/repository"
 	articleUseCase "github.com/diki-haryadi/go-micro-template/internal/article/usecase"
 	externalBridge "github.com/diki-haryadi/ztools/external_bridge"
@@ -43,10 +40,10 @@ func (c *configurator) Configure(ctx context.Context) error {
 	articleHttpController.NewRouter(httpController).Register(httpRouterGp)
 
 	// consumers
-	articleKafkaConsumer.NewConsumer(c.ic.KafkaReader).RunConsumers(ctx)
+	//articleKafkaConsumer.NewConsumer(c.ic.KafkaReader).RunConsumers(ctx)
 
 	// jobs
-	articleJob.NewJob(c.ic.Logger).StartJobs(ctx)
+	//articleJob.NewJob(c.ic.Logger).StartJobs(ctx)
 
 	return nil
 }
