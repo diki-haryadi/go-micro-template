@@ -1,0 +1,21 @@
+#-------#
+# Article #
+#-------#
+
+- table: 'article'
+  pk:
+    id: '550e8400-e29b-41d4-a716-446655440000'  # Example UUID for superuser
+  fields:
+    name: 'microservice 1'
+    description: 'microservice 1'
+#    created_at: 'ON_INSERT_NOW()'
+#    updated_at: 'ON_UPDATE_NOW()'
+
+- table: 'roles'
+  pk:
+    id: '550e8400-e29b-41d4-a716-446655440001'  # Example UUID for user
+  fields:
+    name: 'microservice 2'
+    description: 'microservice 2'
+#    created_at: 'ON_INSERT_NOW()'
+#    updated_at: 'ON_UPDATE_NOW()'

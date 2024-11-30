@@ -24,10 +24,7 @@ func New() *App {
 	return &App{}
 }
 
-func (a *App) Run() error {
-	ctx, cancel := context.WithCancel(context.Background())
-	defer cancel()
-
+func (a *App) Init() *App {
 	_, callerDir, _, ok := runtime.Caller(0)
 	if !ok {
 		log.Fatal("Error generating env dir")
@@ -47,7 +44,16 @@ func (a *App) Run() error {
 	}
 	logger.NewLogger(loggerPath...)
 
-	ic, infraDown, err := iContainer.NewIC(ctx)
+	return a
+}
+
+func (a *App) Run() error {
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
+	container := iContainer.IContainer{}
+	ic, infraDown, err := container.IContext(ctx).
+		ICDown().ICPostgres().ICGrpc().ICEcho().NewIC()
 	if err != nil {
 		return err
 	}

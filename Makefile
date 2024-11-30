@@ -10,7 +10,9 @@ TEST_COVERAGE_FLAGS = -race -coverprofile=coverage.out -covermode=atomic
 TEST_FLAGS?= -timeout 15m
 
 # Set ENV
-export PG_URL=postgres://admin:admin@localhost:5432/go_microservice_template?sslmode=disable ### DB Conn String For Migrations
+include ./envs/.env
+export $(shell sed 's/=.*//' ./envs/.env)
+export PG_URL=postgres://$(PG_USER):$(PG_PASS)@$(PG_HOST):$(PG_PORT)/$(PG_DB)?sslmode=disable ### DB Conn String For Migrations
 
 GREEN  := $(shell tput -Txterm setaf 2)
 YELLOW := $(shell tput -Txterm setaf 3)
